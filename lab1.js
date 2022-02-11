@@ -69,6 +69,28 @@ while (flag){
         }
         alert("УПС... Вы допустили ошибочки\nВ первом множестве ошибки под индексами: " + ta + "\nВо втором ошибки под индексами: " + td);
     }
+    let flag2 = false;
+    for (let i = 0; i < abc.length; i++){
+        for (let j = 0; j < abc.length; j++){
+            if (i != j && abc[i] == abc[j]) {
+                flag2 = true;
+                break;
+            }
+        }
+        if (flag2) break;
+    }
+    for (let i = 0; i < def.length && !flag; i++){
+        for (let j = 0; j < def.length; j++){
+            if (i != j && abc[i] == abc[j]) {
+                flag2 = true;
+                break;
+            }
+        }
+        if (flag2) break;
+    }
+    if (flag2){
+        alert("У тебя повторяются числа??????\nЗачем?\nЭто вообще-то множество\nПовторения запрещены...")
+    }
 }
 function ob(a, b){
     let res = a;
@@ -101,4 +123,4 @@ function obe(a, b){
     })
     return res;
 }
-console.log(ob(abc,def), per(abc,def), dop(abc,def), dop(def,abc), obe(abc,def));
+alert("Объединение: " + ob(abc,def) + "\nРазность: " + per(abc,def) + "\nДополнение A/B: " + dop(abc,def) + "\nДополнение B/A: " + dop(def,abc) + "\nСимметрическая разность: " + obe(abc,def));
