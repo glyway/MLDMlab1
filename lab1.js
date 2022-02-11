@@ -123,4 +123,4 @@ function obe(a, b){
     })
     return res;
 }
-alert("Объединение: " + ob(abc,def) + "\nРазность: " + per(abc,def) + "\nДополнение A/B: " + dop(abc,def) + "\nДополнение B/A: " + dop(def,abc) + "\nСимметрическая разность: " + obe(abc,def));
+alert("A: " + abc + "\nB: " + def + "\nОбъединение: " + ob(abc,def) + "\nРазность: " + per(abc,def) + "\nДополнение A/B: " + dop(abc,def) + "\nДополнение B/A: " + dop(def,abc) + "\nСимметрическая разность: " + obe(abc,def));
