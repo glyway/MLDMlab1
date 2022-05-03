@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>Лабораторная работа 2</title>
+        <link rel="stylesheet" href="lab2.css">
+        <script src="lab2.js"></script>
+    </head>
+    <body>
+        <div class="header">
+            <h1 >Анализ свойств отношений</h1>
+        </div>
+        <div class="contentWrapper">
+            <div class="content">
+                <button class="success" id="relationAnalizeBtn">Анализ</button>
+                <textarea cols="40" rows="5" id="relationInput" placeholder="Введите элемент отношения (2 элемента)"></textarea>
+                <div class="controlCenter">
+                    <button class="success" id="relationAddBtn">Добавить</button>
+                    <button class="warning" id="relationClearBtn">Отчистить</button>
+                </div>
+                <h2>Рабочая зона</h2>
+                <div class="workZone">
+                    <p class="bold">Полученная матрица отношения:</p>
+                    <p id="relationMatrixTxt"></p>
+                    <p class="bold">Свойства полученного отношения:</p>
+                    <p class="relationProperties">
+                        Рефлективность: <span id="relationReflective"></span>
+                        <br>
+                        Симметричность: <span id="relationSymmetric"></span>
+                        <br>
+                        Кососимметричность: <span id="relationSkewSymmetric"></span>
+                        <br>
+                        Транзитивность: <span id="relationTransitive"></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        
+    </body>
+</html>
