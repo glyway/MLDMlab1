@@ -75,7 +75,11 @@ function addElements(){
     let testLength = lines.length;
     let isOkay = true;
     lines = lines.map((el, i) => {
-        let t = el.split(/(\s+)/).filter( e => e.trim().length > 0).map(e => +e);
+        let t = el.split(/(\s+)/).filter( e => e.trim().length > 0).map(e => {
+            if (+e != 0 && +e != 1)
+                isOkay = false;
+            return +e;
+        });
         if (testLength != t.length){
             isOkay = false;
         }
