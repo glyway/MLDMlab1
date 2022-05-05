@@ -11,15 +11,13 @@
         <div class="contentWrapper">
             <div class="content">
                 <button class="success" id="relationAnalizeBtn">Анализ</button>
-                <textarea cols="40" rows="5" id="relationInput" placeholder="Введите элемент отношения (2 элемента)"></textarea>
+                <textarea cols="40" rows="5" id="relationInput" placeholder="Введите матрицу nxn"></textarea>
                 <div class="controlCenter">
                     <button class="success" id="relationAddBtn">Добавить</button>
                     <button class="warning" id="relationClearBtn">Отчистить</button>
                 </div>
-                <h2>Рабочая зона</h2>
-                <div class="workZone">
-                    <p class="bold">Полученная матрица отношения:</p>
-                    <p id="relationMatrixTxt"></p>
+                <div id="workZone">
+                    <h2 style="text-align: center">Рабочая зона</h2>
                     <p class="bold">Свойства полученного отношения:</p>
                     <p class="relationProperties">
                         Рефлективность: <span id="relationReflective"></span>
@@ -33,7 +31,9 @@
                 </div>
             </div>
         </div>
-        
+        <div class="footer" >
+            <p><span class="bold">Сделано</span> Давыдовым Даниилом ИВТАСбд-12</p>
+        </div>
         
     </body>
 </html>
