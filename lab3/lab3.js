@@ -1,36 +1,13 @@
 let relationInput;
+let firstSetInput;
+let secondSetInput;
 
-let relationAddBtn;
 let relationClearBtn;
 let relationAnalizeBtn;
 
 let relationMatrixTxt;
 
-let relationReflective;
-let relationSymmetric;
-let relationTransitive;
-let relationSkewSymmetric;
-
-let flag = true;
-
 let relationMatrix = [];
-
-let multipliedMatrix;
-
-function multiplyMatrix(arr){
-    let cloneArr = JSON.parse(JSON.stringify(arr));
-    for (let k = 0; k < arr.length; k++) {
-        for (let i = 0; i < arr.length; i++) { 
-            let t = 0;
-            for (let j = 0; j < arr.length; j++) {
-                t += arr[i][j] * arr[j][k];
-            }
-            cloneArr[i][k] = t % 2;
-       }
-    }
-    console.log(cloneArr);
-    return cloneArr;
-}
 
 function clearElements() {
     relationInput.value = "";
@@ -39,7 +16,6 @@ function clearElements() {
     relationMatrix = [];
     workZone.style.display = "none";
 }
-
 
 function analizeElements() {
     addElements();
