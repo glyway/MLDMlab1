@@ -4,6 +4,7 @@ include_once 'script.php';
 
 <html>
 <head>
+	<meta charset="utf-8" />
     <title>Лабораторная работа 4</title>
     <link rel="stylesheet" href="index.css">
     <script src="index.js"></script>
