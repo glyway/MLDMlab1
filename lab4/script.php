@@ -13,13 +13,19 @@
             $els = preg_replace("/\s+/", " ", $rows[$i]);
             $els = explode(" ", $els);
             $row = [];
+            for($j = 0; $j < count($els); $j++){
+                if ($els[$j] == ""){
+                    unset($els[$j]);
+                    $j--;
+                }
+            }
             if (count($els) != count($rows)){
                 echo "<p>Неверный ввод</p>";
                 die();
             }
             for($j = 0; $j < count($els); $j++){
                 $t = $els[$j];
-                if ($t == "*"){
+                if ($t == "-"){
                     array_push($row, INF);
                 }
                 else {

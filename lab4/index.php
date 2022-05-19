@@ -4,7 +4,7 @@ include_once 'script.php';
 
 <html>
 <head>
-	<meta charset="utf-8" />
+    <meta charset="utf-8" />
     <title>Лабораторная работа 4</title>
     <link rel="stylesheet" href="index.css">
     <script src="index.js"></script>
@@ -17,7 +17,7 @@ include_once 'script.php';
     <div class="content">
         <button class="success" id="relationAnalizeBtn">Анализ</button>
         <p class="bold">Матрица весов</p>
-        <textarea type="text" id="weightsInput" placeholder="0 2 5 &#10;* 0 1&#10;* * 0"></textarea>
+        <textarea type="text" id="weightsInput" placeholder="0 2 5 &#10;- 0 1&#10;- - 0&#10;- означает что пути нет."></textarea>
         <p class="bold">Начальный индекс</p>
         <input type="text" id="startInput" placeholder="1 (Начиная с 1)">
         <p class="bold">Конечный</p>
